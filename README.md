@@ -70,3 +70,14 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 + Câu lệnh tạo model+controller Menu: php artisan make:model --migration --controller Menu
 + Câu lệnh tạo form request: php artisan make:request Menu\CreateFormRequest
     - Sửa lại authorize trong form request = true để có tác dụng
++ Tìm hiểu về (helpers)slug laravel
++ Tim hieu ve when trong php
+
+
+* Một số điều cần lưu ý:
+  + khi viết file helper muốn autoload ở tất cả các trang thì viết trong composer.json -> autoload -> file, cài package Chạy lệnh composer dump-autoload
+  + Để biên dịch HTML dùng câu lệnh {!! $params !!}
+* Tạo Controller resource Product php artisan make:controller Admin\ProductController --resource 
+* Tạo model, migrate php aritsan make:model Product -m
+* Tim hieu file upload laravel - document
+* Dung store chay cau lenh: php artisan storage:link ~ xem ca cau hinh trong filesystems.php
