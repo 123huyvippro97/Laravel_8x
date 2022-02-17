@@ -8,12 +8,14 @@
             <div class="card-body">
                 <div class="form-group">
                     <label for="menu">Tên danh mục</label>
-                    <input type="text" class="form-control" id="menu" placeholder="Nhập tên danh mục">
+                    <input type="text" class="form-control" id="menu" name="name" placeholder="Nhập tên danh mục">
                 </div>
                 <div class="form-group">
                     <label for="menu">Danh mục cha</label>
                     <select name="parent_id" id="" class="form-control">
-                        <option value="0">Danh mục cha</option>
+                        @foreach($menus as $menu)
+                            <option value="{{ $menu->id }}"> {{ $menu->name }}</option>
+                        @endforeach
                     </select>
                 </div>
                 <div class="form-group">
