@@ -19,9 +19,9 @@
                     <div class="form-group">
                         <label>Danh Mục</label>
                         <select class="form-control" name="menu_id">
-{{--                            @foreach($menus as $menu)--}}
-{{--                                <option value="{{ $menu->id }}">{{ $menu->name }}</option>--}}
-{{--                            @endforeach--}}
+                            @foreach($menus as $menu)
+                                <option value="{{ $menu->id }}">{{ $menu->name }}</option>
+                            @endforeach
                         </select>
                     </div>
                 </div>
@@ -32,7 +32,7 @@
                     <div class="form-group">
                         <label for="menu">Giá Gốc</label>
                         <input type="number" name="price"
-{{--                               value="{{ old('price') }}"--}}
+                               value="{{ old('price') }}"
                            class="form-control" >
                     </div>
                 </div>
@@ -41,7 +41,7 @@
                     <div class="form-group">
                         <label for="menu">Giá Giảm</label>
                         <input type="number" name="price_sale"
-{{--                               value="{{ old('price_sale') }}"--}}
+                               value="{{ old('price_sale') }}"
                                class="form-control" >
                     </div>
                 </div>
@@ -49,15 +49,14 @@
 
             <div class="form-group">
                 <label>Mô Tả </label>
-                <textarea name="description" class="form-control">
-{{--                    {{ old('description') }}--}}
+                <textarea name="description" class="form-control">{{ old('description') }}
                 </textarea>
             </div>
 
             <div class="form-group">
                 <label>Mô Tả Chi Tiết</label>
                 <textarea name="content" id="content" class="form-control">
-{{--                    {{ old('content') }}--}}
+                    {{ old('content') }}
                 </textarea>
             </div>
 

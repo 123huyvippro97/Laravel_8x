@@ -41,7 +41,7 @@ $('#upload').change(function (){
                    '<a href="'+result.url+'" target="_blank">'+
                    '<img src="'+result.url+'" width="100px"></a>'
                );
-               $('#file').val(result.url);
+               $('#thumb').val(result.url);
            }else{
                alert('upload File lỗi')
            }

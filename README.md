@@ -64,7 +64,7 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-
+-- Các câu lệnh tr0ng quá trình code: php artisan make:controller MainController
 
 
 + Câu lệnh tạo model+controller Menu: php artisan make:model --migration --controller Menu
@@ -81,3 +81,6 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 * Tạo model, migrate php aritsan make:model Product -m
 * Tim hieu file upload laravel - document
 * Dung store chay cau lenh: php artisan storage:link ~ xem ca cau hinh trong filesystems.php
+* !! Dùng để thực thi HTML {{!! !!}}
+- Tạo controller Slider php artisan make:controller Admin\SliderController
+- Tạo migration Slider php aritsan make:model Slider --migration
