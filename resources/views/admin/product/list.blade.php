@@ -17,7 +17,7 @@
             <tr>
                 <td style='width: 50px'>{{ $product->id  }}</td>
                 <td>{{ $product->name }}</td>
-                <td>{{ $product->menu }}</td>
+                <td>{{ $product->menu_id }}</td>
                 <td>{{ $product->price }}</td>
                 <td>{{ $product->price_sale }}</td>
                 <td>{!! \App\Helpers\Helper::active($product->active) !!}</td>

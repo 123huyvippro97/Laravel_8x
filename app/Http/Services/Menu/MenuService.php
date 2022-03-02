@@ -68,4 +68,8 @@ class MenuService
         Session::flash('success','Cập nhập thành công danh mục');
         return true;
     }
+
+    public function showList(){
+        return Menu::select('name','id')->orderByDesc('id')->get();
+    }
 }

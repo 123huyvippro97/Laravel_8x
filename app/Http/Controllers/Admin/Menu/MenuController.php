@@ -7,6 +7,7 @@ use App\Http\Requests\Menu\MenuFormRequest;
 use App\Models\Menu;
 use Illuminate\Http\Request;
 use App\Http\Services\Menu\MenuService;
+
 class MenuController extends Controller
 {
     protected $menuService;

@@ -169,6 +169,9 @@ return [
         /*
          * Application Service Providers...
          */
+        /*Khai bao provider de chay o view*/
+        App\Providers\ViewServiceProvider::class,
+        /*Khai bao provider de chay o view*/
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
